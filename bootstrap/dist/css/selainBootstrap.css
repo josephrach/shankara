@@ -1,0 +1,15 @@
+.jumbotron img{
+  border-radius: 53px;
+  border: 5px solid #999;
+}
+
+.bagianlain{
+  min-height: 300px;
+}
+
+.navbar{
+  z-index: 3;
+  padding-top: 0;
+  border: 8px solid #777;
+  
+}

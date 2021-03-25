@@ -1,0 +1,95 @@
+/* untuk semuanya */
+body{
+  max-width: 1000px
+}
+/* akhir untuk semuanya */
+
+/* bagian navbar */
+
+.kotak_panjang{
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: lightgreen;
+  position: fixed;
+  z-index: 75;
+}
+
+.menu_custom{
+  position: fixed;
+  z-index: 80;
+  top: 4px;
+  left: 5%;
+  width: 60px;
+  height: 70px;
+  background-color: salmon;
+  box-shadow: 0,-5px,10px,rgb(7, 7, 7);
+}
+.menu_titikTiga :hover{
+  box-shadow: 0,-5px,40px,rgba(0, 0, 0, 0.75);
+}
+
+.menu_beranda{
+  position: fixed;
+  z-index: 80;
+  top: 4px;
+  left: 15%;
+  width: 60px;
+  height: 70px;
+  background-color: lightblue;
+}
+
+.menu_titikTiga{
+  position: fixed;
+  z-index: 80;
+  top: 4px;
+  right: 5%;
+  width: 60px;
+  height: 70px;
+  background-color: grey;
+}
+.tombol{
+  top : 5px;
+}
+
+#navbar .menu_beranda img{
+  width: 10px;
+  height: 10px;
+}
+/* akhir bagian navbar */
+
+/* bagian konten */
+
+
+.bagian_konten2{
+  padding-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  border: 2px solid black;
+  max-width: 1000px
+}
+
+.bagian_konten{
+  padding-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  z-index: 20;
+  left: -10500px;
+  border-left: 5px dot black;
+}
+
+/* akhir bagian konten */
+/* pemberian motion ke halaman*/
+.geserKanan{
+  left:0;
+}
+
+.geserKiri{
+  left : -15000px;
+}
+/* akhir pemberian motion ke halaman */
