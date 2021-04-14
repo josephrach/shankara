@@ -106,3 +106,19 @@ body{
   border-bottom : 5px solid yellow;
 }
 /* akhir penambahan border merah dibawah tombol saat dipencet */
+/* bagian kontakBar */
+#kontakBar{
+  position : absolute;
+  z-index : 20;
+  top: 1300px;
+  left : 0;
+  right : 0;
+  min-height : 200px;
+  background-color : rgb(97, 94, 94);
+}
+.dalemKontakBar{
+  margin : 30px;
+  border : 1px solid black;
+  height : 180px;
+}
+/* akhir bagian kontakBar */
