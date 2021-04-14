@@ -1,5 +1,6 @@
 // mengambil elemen tombol
 const tombolBeranda = document.getElementsByClassName('menu_beranda');
+const tombolCustom = document.getElementsByClassName('menu_custom');
 
 // mengambil halamannya
 
@@ -8,17 +9,20 @@ const tombolBeranda = document.getElementsByClassName('menu_beranda');
  
 
 
-
 // membuat fungsi geser halamannya
 function geserHalamanBeranda() {
-  halamanBeranda.setAttribute('class','geserKanan');
-  halamanCustom.setAttribute('class','geserKiri');
+  halamanBeranda[0].classList.toggle('geserKanan');
+  halamanBeranda[0].classList.toggle('geserKiri');
+  tombolBeranda[0].classList.toggle('garisBawah');
+  halamanCustom[0].classList.toggle('geserKiri');
+  halamanCustom[0].classList.toggle('geserKanan');
+  tombolCustom[0].classList.toggle('garisBawah');
   return halamanBeranda,halamanCustom;
 }
 
 
 // menambahkan event ke dalam tombol
-// tombolBeranda.;
-tombolBeranda.setAttribute('onclick','geserHalamanBeranda()')
+tombolBeranda[0].setAttribute('onclick','geserHalamanBeranda()');
+tombolCustom[0].setAttribute('onclick','geserHalamanBeranda()');
 
 

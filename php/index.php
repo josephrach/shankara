@@ -14,8 +14,8 @@ $akun = query('SELECT * FROM infoAkun');
   <head>
     <meta charset="utf-8">
     <title>Costom Cloths</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap\dist\css\bootstrap.css">
   </head>
   <body>
     <!-- <?php $o = 1; ?>
@@ -68,7 +68,7 @@ $akun = query('SELECT * FROM infoAkun');
     <!-- akhir ceritanya isinya -->
 
 
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
-    <script src="bootstrap\dist\js\bootstrap.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script src="../bootstrap\dist\js\bootstrap.js"></script>
   </body>
 </html>
