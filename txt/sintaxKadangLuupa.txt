@@ -1,2 +1,36 @@
 mySQL :
-    
+    (conect ke database)
+        $conn = mysqli_connect("hostname","username","password","database name");
+    (query/ambil data dari tabel di database)
+        $result = mysqli_query( $conn , "SELECT * FROM namatabel");
+    (ambil data/fetch tabel dari object result)
+        @mengembalikan array numerik
+            mysqli_fetch_row($result);
+        @mengembalikan array associative
+            mysqli_fetch_assoc($result);
+        @mengembalikan array numerik dan associative/ dobel
+            mysqli_fetch_array($result);
+        @mengembalikan array objek berupa array tersebut
+            mysqli_fetch_object($result);
+    (menyambungkan file php lain ke file php utama/bukan)
+        require 'namafile.php';
+
+GIT :
+    (membuat alias graphic commit)
+        alias graph="git log --all --decorate --oneline --graph"
+    (membuat remote)
+        git remote add origin https://github.com/Josephrach/shankara.git
+    (mengecek keberadaan remote)
+        git remote -v
+    (push ke remote)
+        git push -u origin master
+    (melihat konsisi commit antara di local dan di remote)
+        git fetch
+    (menarik remote untuk di clone lalu dilihat ada conflict ato tdk)
+        git pull
+    (menginisialisasi folder menjadi sebuah repo)
+        git init
+    (untuk kembali ke suatu commit)
+        git checkout 1f9d1c/commitHash namafile.extensinya/opsional
+    (mengecek commit pada suatu file)
+        git log -- namafile.extensinya
