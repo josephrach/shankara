@@ -1,36 +1,37 @@
 // mengambil elemen tombol
-const tombolBeranda = document.getElementsByClassName('menu_beranda');
-const tombolCustom = document.getElementsByClassName('menu_custom');
-
+const tombolCustom = document.getElementsByClassName('menu_beranda');
+const tombolBeranda = document.getElementsByClassName('menu_custom');
+// akhit mengambil elemen tombol
 // mengambil halamannya
 
- var halamanBeranda = document.getElementsByClassName('bagian_konten');
- var halamanCustom = document.getElementsByClassName('bagian_konten2');
+ var halamanCustom = document.getElementsByClassName('bagian_konten');
+ var halamanBeranda = document.getElementsByClassName('bagian_konten2');
  
-
+// akhir mengambil halamannya
 
 // membuat fungsi geser halamannya
 function geserHalamanBeranda() {
-  halamanBeranda[0].classList.add('geserKanan');
-  halamanBeranda[0].classList.remove('geserKiri');
-  tombolBeranda[0].classList.add('garisBawah');
-  halamanCustom[0].classList.add('geserKiri');
-  halamanCustom[0].classList.remove('geserKanan');
-  tombolCustom[0].classList.remove('garisBawah');
-  return halamanBeranda,halamanCustom;
+  halamanCustom[0].classList.add('geserKanan');
+  halamanCustom[0].classList.remove('geserKiri');
+  tombolCustom[0].classList.add('garisBawah');
+  halamanBeranda[0].classList.add('geserKiri');
+  halamanBeranda[0].classList.remove('geserKanan');
+  tombolBeranda[0].classList.remove('garisBawah');
+  return halamanCustom,halamanBeranda;
 }
 function geserHalamanCustom(){
-  halamanBeranda[0].classList.remove('geserKanan');
-  halamanBeranda[0].classList.add('geserKiri');
-  tombolBeranda[0].classList.remove('garisBawah');
-  halamanCustom[0].classList.remove('geserKiri');
-  halamanCustom[0].classList.add('geserKanan');
-  tombolCustom[0].classList.add('garisBawah');
-  return halamanBeranda,halamanCustom;
+  halamanCustom[0].classList.remove('geserKanan');
+  halamanCustom[0].classList.add('geserKiri');
+  tombolCustom[0].classList.remove('garisBawah');
+  halamanBeranda[0].classList.remove('geserKiri');
+  halamanBeranda[0].classList.add('geserKanan');
+  tombolBeranda[0].classList.add('garisBawah');
+  return halamanCustom,halamanBeranda;
 }
+// akhir membuat fungsi geser halamannya
 
 // menambahkan event ke dalam tombol
-tombolBeranda[0].setAttribute('onclick','geserHalamanBeranda()');
-tombolCustom[0].setAttribute('onclick','geserHalamanCustom()');
-
+tombolCustom[0].setAttribute('onclick','geserHalamanBeranda()');
+tombolBeranda[0].setAttribute('onclick','geserHalamanCustom()');
+// akhit menambahkan event ke dalam tombol
 

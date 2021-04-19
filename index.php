@@ -1,21 +1,23 @@
-<!-- <?php
+<?php
 
 require 'php/function.php';
 
 $akun = query('SELECT * FROM infoAkun');
 // ambil data atau (fetch)
-// while ($akun = mysqli_fetch_assoc($result))
+while ($akun = mysqli_fetch_assoc($result))
 
-// var_dump($akun);
+var_dump($akun);
 
- ?> -->
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Costom Cloths</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
   </head>
   <body>
     <!-- <?php $o = 1; ?>
@@ -68,7 +70,10 @@ $akun = query('SELECT * FROM infoAkun');
     <!-- akhir ceritanya isinya -->
 
 
-    <script type="text/javascript" src="../js/script.js"></script>
-    <script src="../bootstrap\dist\js\bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="bootstrap\dist\js\bootstrap.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+    <!-- <script src="bootstrap\dist\js\bootstrap.js"></script>  -->
   </body>
 </html>
